@@ -36,6 +36,6 @@ module.exports = {
 		},
 		jest: {
 			version: require('jest/package.json').version,
-		}
+		},
 	},
 }
