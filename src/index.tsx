@@ -1,11 +1,8 @@
-import { FC, createElement } from "react";
-import { render } from "react-dom";
-export const Index: FC = () => {
-  return (
-    <div>
-      <p>Hello Wold!!!</p>
-    </div>
-  );
-};
+import {render} from 'react-dom'
+import { createElement } from 'react';
 
-render(createElement(Index), document.getElementById("root"));
+import Main from './Components/Main';
+import './style.css'
+
+
+render(createElement(Main), document.getElementById("root"));
