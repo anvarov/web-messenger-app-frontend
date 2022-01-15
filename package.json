@@ -3,17 +3,32 @@
   "name": "web-messenger-app",
   "packageManager": "yarn@3.1.1",
   "devDependencies": {
+    "@types/eslint": "^8",
     "@types/jest": "^27.4.0",
     "@types/node": "^17.0.8",
     "@types/object-assign": "^4",
+    "@types/prettier": "^2",
     "@types/react": "^17",
     "@types/react-dom": "^17",
+    "@typescript-eslint/eslint-plugin": "^5.9.1",
+    "@typescript-eslint/parser": "^5.9.1",
     "autoprefixer": "^10.4.2",
     "css-loader": "^6.5.1",
+    "eslint": "^8.6.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-node": "^0.3.6",
+    "eslint-import-resolver-webpack": "^0.13.2",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^25.3.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "husky": "^7.0.4",
+    "jest": "^27.4.7",
     "postcss": "^8.4.5",
     "postcss-loader": "^6.2.1",
-    "react": "^17.0.2",
+    "prettier": "^2.5.1",
+  	"react": "^17.0.2",
     "react-dom": "^17.0.2",
     "style-loader": "^3.3.1",
     "tailwindcss": "^3.0.15",
@@ -22,10 +37,13 @@
     "webpack": "^5.66.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.7.3"
+  
   },
   "scripts": {
     "postinstall": "husky install",
-    "build": "webpack --config webpack.config.js",
-    "serve": "webpack serve"
+    "build": "yarn webpack --config webpack.config.js",
+    "serve": "yarn webpack serve",
+    "lint": "yarn eslint src --ext .ts,.tsx",
+    "format": "yarn prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|mdx|graphql|vue)\""
   }
 }

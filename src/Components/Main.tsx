@@ -1,11 +1,11 @@
-import { FC } from "react";
+import * as React from 'react'
 
-const Main: FC = () => {
-    return (
-        <div className="flex">
-            <p className="bg-fuchsia-800">Main Component</p>
-        </div>
-    );
+const Main: React.FC = () => {
+	return (
+		<div className="flex">
+			<p className="bg-fuchsia-800">Main Component</p>
+		</div>
+	)
 }
 
-export default Main;
+export default Main

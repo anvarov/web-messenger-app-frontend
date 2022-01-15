@@ -1,0 +1,6 @@
+public
+src/build/
+/\.pnp.cjs
+/\.pnp.loader.mjs
+/yarn.lock
+/package.json

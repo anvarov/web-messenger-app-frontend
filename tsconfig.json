@@ -1,12 +1,12 @@
 {
-    "compilerOptions": {
-      "noImplicitAny": true,
-      "module": "ESNext",
-      "target": "ES6",
-      "jsx": "react-jsxdev",
-      "allowJs": true,
-      "moduleResolution": "Node",
-    },
-    "exclude": ["node_modules"],
-    "include": ["./src/**/*", "**/*.spec.ts"]
-  }
+	"compilerOptions": {
+		"noImplicitAny": true,
+		"module": "ESNext",
+		"target": "ES6",
+		"jsx": "react-jsxdev",
+		"allowJs": true,
+		"moduleResolution": "Node"
+	},
+	"exclude": ["node_modules"],
+	"include": ["./src/**/*", "**/*.spec.ts"]
+}
