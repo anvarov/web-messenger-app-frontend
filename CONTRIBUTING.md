@@ -3,9 +3,8 @@
 - [How to Contribute](#how-to-contribute)
   - [Getting Code](#getting-code)
   - [Code Style](#code-style)
-  - [API guidelines](#api-guidelines)
   - [Commit Messages](#commit-messages)
-  - [Writing Documentation](#writing-documentation)
+  <!-- - [Writing Documentation](#writing-documentation) -->
   - [Running & Writing Tests](#running--writing-tests)
 
 ## How to Contribute
@@ -15,8 +14,8 @@
 1. Clone this repository
 
 ```bash
-git clone https://github.com/microsoft/Web Messenger
-cd Web Messenger
+git clone https://github.com/anvarov/web-messenger-app-frontend.git
+cd web-messenger-app
 ```
 
 2. Install dependencies
@@ -38,38 +37,24 @@ yarn run build
 yarn test
 ```
 
-### Code reviews
-
-All submissions, including submissions by project members, require review. We
-use GitHub pull requests for this purpose. Consult
-[GitHub Help](https://help.github.com/articles/about-pull-requests/) for more
-information on using pull requests.
-
 ### Code Style
 
-- Coding style is fully defined in [.eslintrc](https://github.com/microsoft/Web
-  Messenger/blob/main/.eslintrc.js)
+- Coding style is fully defined in
+  [.eslintrc.js](https://github.com/anvarov/web-messenger-app-frontend/blob/main/.eslintrc.js)
 - Comments should be generally avoided. If the code would not be understood
   without comments, consider re-writing the code to make it self-explanatory.
 
 To run code linter, use:
 
 ```bash
-yarn run eslint
+yarn run lint
 ```
 
-### API guidelines
+To run code formatter, use:
 
-When authoring new API methods, consider the following:
-
-- Expose as little information as needed. When in doubt, don’t expose new
-  information.
-- Methods are used in favor of getters/setters.
-  - The only exception is namespaces, e.g. `page.keyboard` and `page.coverage`
-- All string literals must be lowercase. This includes event names and option
-  values.
-- Avoid adding "sugar" API (API that is trivially implementable in user-space)
-  unless they're **very** common.
+```bash
+yarn run lint
+```
 
 ### Commit Messages
 
@@ -102,14 +87,14 @@ footer
 Example:
 
 ```
-fix(firefox): make sure session cookies work
+fix(webpack): make sure webpack dev server works correctly
 
-This patch fixes session cookies in the firefox browser.
+This patch fixes webpack-dev-server issue when routing is not available.
 
 Fixes #123, fixes #234
 ```
 
-### Writing Documentation
+<!-- ### Writing Documentation
 
 All API classes, methods, and events should have a description in
 [`docs/src`](https://github.com/microsoft/Web Messenger/blob/main/docs/src).
@@ -120,8 +105,9 @@ with the codebase.
 To run the documentation linter, use:
 
 ```bash
-yarn run doc
-```
+yarn run doc -->
+
+````
 
 ### Adding New Dependencies
 
@@ -141,12 +127,11 @@ A barrier for introducing new installation dependencies is especially high:
 - Every feature should be accompanied by a test.
 - Every public api event/method should be accompanied by a test.
 
-Web Messenger tests are located in [`tests`](https://github.com/microsoft/Web
-Messenger/blob/main/tests) and use `jest` test runner. These are integration
+Web Messenger tests are located in [`tests`](https://github.com/anvarov/web-messenger-app-frontend/blob/main/src/tests) and use `jest` test runner. These are integration
 tests, making sure public API methods and events work as expected.
 
 - To run all tests:
 
 ```bash
 yarn run test
-```
+````
