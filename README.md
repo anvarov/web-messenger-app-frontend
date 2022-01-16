@@ -1,6 +1,6 @@
 # Web Messenger App
 
-[[!Generic badge]https://img.shields.io/github/issues/anvarov/web-messenger-app-frontend](https://github.com/anvarov/web-messenger-app-frontend/issues)
+[[!Generic badge](https://img.shields.io/github/issues/anvarov/web-messenger-app-frontend)](https://github.com/anvarov/web-messenger-app-frontend/issues)
 
 # Description
 
