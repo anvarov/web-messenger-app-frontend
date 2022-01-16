@@ -4,3 +4,6 @@ src/build/
 /\.pnp.loader.mjs
 /yarn.lock
 /package.json
+.yarn
+.husky
+.vscode
