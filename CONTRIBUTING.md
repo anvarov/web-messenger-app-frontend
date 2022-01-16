@@ -1,3 +1,5 @@
+[![Generic badge]]https://img.shields.io/github/issues/anvarov/web-messenger-app-frontend(https://github.com/anvarov/web-messenger-app-frontend/issues)
+
 # Contributing
 
 - [How to Contribute](#how-to-contribute)
